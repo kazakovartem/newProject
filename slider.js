@@ -24,14 +24,14 @@ window.onload = function(){
 		firstDot.style['cursor'] = 'pointer';
 
 		let sop = top;
-		let start = Date.now(); 
+		let timePassed = 0 ;
 		let timer = setInterval(function() {
-			let timePassed = Date.now() - start;
 			Promise.resolve().then(()=>{draw(timePassed)});
 			if (timePassed >= width) {
 				clearInterval(timer);
 				return;
 			}
+			timePassed +=4;
 		}, 1);
 
 		function draw(timePassed) {
@@ -74,13 +74,14 @@ window.onload = function(){
 
 		let sop = top;
 		let start = Date.now(); 
+		let timePassed = 0;
 		let timer = setInterval(function() {
-			let timePassed = Date.now() - start;
 			Promise.resolve().then(()=>{draw(timePassed)});
 			if (timePassed >= width) {
 				clearInterval(timer);
 				return;
 			}
+			timePassed +=4;
 		}, 1);
 
 		function draw(timePassed) {
@@ -112,14 +113,14 @@ window.onload = function(){
 
 			let sop = top;
 			let mer = width*(op-1);
-			let start = Date.now(); 
+			let timePassed = 0;
 			let timer = setInterval(function() {
-				let timePassed = Date.now() - start;
 				Promise.resolve().then(()=>{draw(timePassed)});
 				if (timePassed >= mer) {
 					clearInterval(timer);
 					return;
 				}
+				timePassed +=4;
 			}, 1);
 	
 			function draw(timePassed) {
@@ -153,14 +154,14 @@ window.onload = function(){
 			let mer;
 			if(op > 2){
 				mer = width*(op-2);
-				let start = Date.now(); 
+				let timePassed = 0;
 				let timer = setInterval(function() {
-					let timePassed = Date.now() - start;
 					Promise.resolve().then(()=>{draw(timePassed)});
 					if (timePassed >= mer) {
 						clearInterval(timer);
 						return;
 					}
+					timePassed +=4;
 				}, 1);
 		
 				function draw(timePassed) {
@@ -168,14 +169,14 @@ window.onload = function(){
 				}
 			}else{
 				mer = width;
-				let start = Date.now(); 
+				let timePassed = 0;
 				let timer = setInterval(function() {
-					let timePassed = Date.now() - start;
 					Promise.resolve().then(()=>{draw(timePassed)});
 					if (timePassed >= mer) {
 						clearInterval(timer);
 						return;
 					}
+					timePassed +=4;
 				}, 1);
 		
 				function draw(timePassed) {
@@ -209,14 +210,14 @@ window.onload = function(){
 			let mer;
 			if(op > 3){
 				mer = width*(op-3);
-				let start = Date.now(); 
+				let timePassed = 0;
 				let timer = setInterval(function() {
-					let timePassed = Date.now() - start;
 					Promise.resolve().then(()=>{draw(timePassed)});
 					if (timePassed >= mer) {
 						clearInterval(timer);
 						return;
 					}
+					timePassed +=4;
 				}, 1);
 		
 				function draw(timePassed) {
@@ -224,14 +225,14 @@ window.onload = function(){
 				}
 			}else{
 				mer = width*(3-op);
-				let start = Date.now(); 
+				let timePassed = 0;
 				let timer = setInterval(function() {
-					let timePassed = Date.now() - start;
 					Promise.resolve().then(()=>{draw(timePassed)});
 					if (timePassed >= mer) {
 						clearInterval(timer);
 						return;
 					}
+					timePassed +=4;
 				}, 1);
 		
 				function draw(timePassed) {
@@ -265,14 +266,14 @@ window.onload = function(){
 			let sop = top;
 			if(op > 4){
 				mer = width*(op-4);
-				let start = Date.now(); 
+				let timePassed = 0;
 				let timer = setInterval(function() {
-					let timePassed = Date.now() - start;
 					Promise.resolve().then(()=>{draw(timePassed)});
 					if (timePassed >= mer) {
 						clearInterval(timer);
 						return;
 					}
+					timePassed +=4;
 				}, 1);
 		
 				function draw(timePassed) {
@@ -281,14 +282,14 @@ window.onload = function(){
 			}else{
 				
 				mer = width*(4-op);
-				let start = Date.now(); 
+				let timePassed = 0;
 				let timer = setInterval(function() {
-					let timePassed = Date.now() - start;
 					Promise.resolve().then(()=>{draw(timePassed)});
 					if (timePassed >= mer) {
 						clearInterval(timer);
 						return;
 					}
+					timePassed +=4;
 				}, 1);
 		
 				function draw(timePassed) {
@@ -323,14 +324,14 @@ window.onload = function(){
 			
 			let sop = top;
 			let mer = width*(5-op);
-			let start = Date.now(); 
+			let timePassed = 0;
 			let timer = setInterval(function() {
-				let timePassed = Date.now() - start;
 				Promise.resolve().then(()=>{draw(timePassed)});
 				if (timePassed >= mer) {
 					clearInterval(timer);
 					return;
 				}
+				timePassed +=4;
 			}, 1);
 	
 			function draw(timePassed) {
